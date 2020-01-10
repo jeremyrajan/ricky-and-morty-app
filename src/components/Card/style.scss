@@ -8,6 +8,7 @@
   .card-info {
     display: flex;
     font-size: 0.9rem;
+    margin: 1rem 0;
   }
 
   .card-info-title {
@@ -19,5 +20,11 @@
     width: 100%;
     margin-left: 0.2rem;
     text-align: right;
+  }
+
+  .card-info-link {
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
   }
 }

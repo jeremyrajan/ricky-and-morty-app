@@ -1,4 +1,19 @@
 .home {
+  h1, h2 {
+    color: #007bff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-top: -2px;
+    background: aliceblue;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
   .ops {
     position: fixed;
     top: 50%;
