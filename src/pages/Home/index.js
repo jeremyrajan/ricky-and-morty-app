@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useState, useEffect, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import List from '../../components/List';
 import Loader from '../../components/Loader';
 import axios from 'axios';
@@ -20,11 +20,8 @@ const HomePage = () => {
 
   useEffect(_ => {
     fetchData();
-  }, [])
-
-  useLayoutEffect(_ => {
     window.scrollTo(0, 0);
-  })
+  }, [])
 
   return (
     <div className="home">
