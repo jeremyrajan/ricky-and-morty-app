@@ -1,0 +1,1 @@
+<img src="https://github.com/jeremyrajan/ricky-and-morty-app/workflows/Node CI/badge.svg">
