@@ -7,7 +7,7 @@ import axios from 'axios';
 import './style.scss';
 
 const HomePage = () => {
-  const [data, setData] = useState({ characters: [], episodes: {}, info: {} });
+  const [data, setData] = useState({ characters: [], episodes: {}, info: {}, currentPage: 1 });
   const [loading, showLoader] = useState(false);
 
   const fetchData = async (page = 1) => {

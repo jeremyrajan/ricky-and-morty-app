@@ -38,7 +38,7 @@ const Card = ({ character, episodes }) => {
         <span className="card-info-title">Episodes</span>
         <span className="card-info-content">
           <span className="card-info-link" onClick={_ => setIsOpen(true)}>Show Episodes</span>
-          <Modal isOpen={isOpen} onClose={_ => setIsOpen(false)}>
+          <Modal isOpen={isOpen} onClose={_ => setIsOpen(false)} className="card-info-modal">
             <h2>Episode(s)</h2>
             {characterEpisodes.map(episode => <p key={episode.id}>#{episode.id}. {episode.name}</p>)}
           </Modal>
