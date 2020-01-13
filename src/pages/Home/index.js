@@ -13,7 +13,7 @@ const HomePage = () => {
   const fetchData = async (page = 1) => {
     showLoader(true);
     page = page < 1 ? 1 : page;
-    const { data: { characters, episodes, info } } = await axios(`https://ricky-and-morty-api.now.sh/characters?page=${page}`);
+    const { data: { characters, episodes, info } } = await axios(`/api/characters?page=${page}`);
     setData({ characters, episodes, info, currentPage: page });
     showLoader(false);
   }

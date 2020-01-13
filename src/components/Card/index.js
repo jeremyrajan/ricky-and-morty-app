@@ -4,7 +4,7 @@ import Modal from '../Modal';
 import './style.scss';
 
 const Card = ({ character, episodes }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const characterEpisodes = character.episodes.map(episodeId => episodes[episodeId]);
 
   return (
@@ -37,8 +37,8 @@ const Card = ({ character, episodes }) => {
       <div className="card-info">
         <span className="card-info-title">Episodes</span>
         <span className="card-info-content">
-          <span className="card-info-link" onClick={_ => setIsOpen(true)}>Show Episodes</span>
-          <Modal isOpen={isOpen} onClose={_ => setIsOpen(false)} className="card-info-modal">
+          <span className="card-info-link" onClick={_ => setIsModalOpen(true)}>Show Episodes</span>
+          <Modal isOpen={isModalOpen} onClose={_ => setIsModalOpen(false)} className="card-info-modal">
             <h2>Episode(s)</h2>
             {characterEpisodes.map(episode => <p key={episode.id}>#{episode.id}. {episode.name}</p>)}
           </Modal>

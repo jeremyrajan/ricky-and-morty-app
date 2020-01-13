@@ -20,7 +20,7 @@ const Modal = (props) => {
   }, [props.isOpen])
 
   return (
-    <div className="modal" style={{display: isOpen ? 'block' : 'none'}}>
+    <div className="modal" style={{ display: isOpen ? 'block' : 'none' }}>
       <div className="modal-content">
         {props.children}
       </div>
